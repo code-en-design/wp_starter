@@ -1,6 +1,6 @@
 {
     "name": "code-en-design/iamanartist_wp",
-    "description": "Een WP opzet voor een unstenaars website, inclusief een paar thema's",
+    "description": "Een WP opzet voor een kunstenaars website, inclusief een paar thema's",
     "authors": [{
         "name": "Martin Takken",
         "email": "martin@code-en-design.nl"
@@ -28,8 +28,8 @@
         "wpackagist-plugin/wp-nested-pages": "*",
         "wpackagist-plugin/jetpack":"*",
         "wpackagist-theme/onepress":"*",
-        "wpackagist-theme/screenr":"*"
-
+        "wpackagist-theme/screenr":"*",
+        "wpackagist-plugin/fakerpress":"*"
     },
     "extra": {
         "installer-paths": {
