@@ -1,0 +1,45 @@
+{
+    "name": "code-en-design/iamanartist_wp",
+    "description": "Een WP opzet voor een unstenaars website, inclusief een paar thema's",
+    "authors": [{
+        "name": "Martin Takken",
+        "email": "martin@code-en-design.nl"
+    }],
+    "repositories": [{
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=7",
+        "johnpbloch/wordpress": ">=5",
+        "wpackagist-plugin/add-category-to-pages": "*",
+        "wpackagist-plugin/advanced-custom-fields": "*",
+        "wpackagist-plugin/child-theme-configurator": "*",
+        "wpackagist-plugin/contact-form-7": "*",
+        "wpackagist-plugin/contact-form-cfdb7": "*",
+        "wpackagist-plugin/custom-post-type-ui": "*",
+        "wpackagist-plugin/duplicate-page": "*",
+        "wpackagist-plugin/hide-my-site": "*",
+        "wpackagist-plugin/simple-custom-post-order": "*",
+        "wpackagist-plugin/svg-support": "*",
+        "wpackagist-plugin/updraftplus": "*",
+        "wpackagist-plugin/wp-fastest-cache": "*",
+        "wpackagist-plugin/wp-nested-pages": "*",
+        "wpackagist-plugin/jetpack":"*",
+        "wpackagist-theme/onepress":"*",
+        "wpackagist-theme/screenr":"*"
+
+    },
+    "extra": {
+        "installer-paths": {
+            "shop/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "shop/wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "iamanartist"
+    }
+}
