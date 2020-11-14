@@ -19,8 +19,8 @@
 # 7. answer some questions in the bash
 
 # edit these:
-SEARCH=http://iamanartist.data-ant.com
-REPLACE=http://cend.data-ant.com
+SEARCH=http://lifedomain.com
+REPLACE=http://testdomain.com
 WPDIR=iamanartist
 SEARCHADMINMAIL=webadmin@lifedomain.com
 REPLACEADMINMAIL=martin@testdomain.com

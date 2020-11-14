@@ -1,12 +1,13 @@
 # wp_starter
 
-## composer.json 
+## composer.json  
 
 To start a basic Wordpress website we use a few starterscripts.
 
 - open terminal  and cd to the directory this script is in  
 - mkdir *iamanartist* or something else...  
 - change the name in composer.json
+- See https://wpackagist.org/ for more.
 - run composer install
 - cd to wp directory (iamanartist) and copy wp-config-sample.php naar wp-config.php and fill in the dbase settings: 
 
