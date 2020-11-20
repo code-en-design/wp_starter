@@ -30,8 +30,25 @@ REPLACEADMINMAIL=martin@testdomain.com
 
 
 
+# info ----------------------------------
+# https://wordpress.stackexchange.com/questions/290793/wp-cli-error-establishing-a-database-connection-in-localhost-mamp
+# wp search-replace --url=$SEARCH $SEARCH $REPLACE
+# echo 'ziezo'
+# exit;
 
+# https://stackoverflow.com/questions/20751352/suppress-warning-messages-using-mysql-from-within-terminal-but-password-written
+# mysql_config_editor set --login-path=local --host=$host --user=$user --password
 
+# mysql globals
+# mysql complains about security here but we just ignore...
+# mysql: [Warning] Using a password on the command line interface can be insecure.
+
+# to suppress this warning it's also possible to skip the -p$password everywhere, and use:
+# mysql password in my.cnf:
+# nano .my.cnf
+# [mysql]
+# user=mysqluser
+# password=mysqlpass
 
 
 
@@ -105,22 +122,11 @@ We import the .gz file...
 '
 
 
-# https://stackoverflow.com/questions/20751352/suppress-warning-messages-using-mysql-from-within-terminal-but-password-written
-# mysql_config_editor set --login-path=local --host=$host --user=$user --password
 
-# mysql globals
-# mysql complains about security here but we just ignore...
-# mysql: [Warning] Using a password on the command line interface can be insecure.
 
-# to suppress this warninh it's also possible to skip the -p$password everywhere, and use:
-# mysql password in my.cnf:
-# nano .my.cnf
-# [mysql]
-# user=mysqluser
-# password=mysqlpass
 
-mysql --user="$user" -p$password --database="$database" --execute="SET @@GLOBAL.sql_mode = 'STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'"
-zcat < ~/Desktop/$dbaseexportfile | mysql -u 'root' -p$password $database
+mysql --user=$user -p$password --database="$database" --execute="SET @@GLOBAL.sql_mode = 'STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'"
+zcat < ~/Desktop/$dbaseexportfile | mysql -u root -p$password $database
 cd $HOMEPATH
 
 printf '
