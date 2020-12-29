@@ -33,10 +33,10 @@
     },
     "extra": {
         "installer-paths": {
-            "shop/wp-content/plugins/{$name}/": [
+            "iamanartist/wp-content/plugins/{$name}/": [
                 "type:wordpress-plugin"
             ],
-            "shop/wp-content/themes/{$name}/": [
+            "iamanartist/wp-content/themes/{$name}/": [
                 "type:wordpress-theme"
             ]
         },
