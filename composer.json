@@ -29,7 +29,12 @@
         "wpackagist-plugin/jetpack":"*",
         "wpackagist-theme/onepress":"*",
         "wpackagist-theme/screenr":"*",
-        "wpackagist-plugin/fakerpress":"*"
+        "wpackagist-plugin/fakerpress":"*",
+        "wpackagist-plugin/breadcrumb-navxt":"*",
+        "wpackagist-plugin/cookie-notice":"*",
+        "wpackagist-plugin/googleanalytics":"*",
+        "wpackagist-plugin/wordpress-seo":"*",
+        "wpackagist-plugin/wp-cerber":"8.7"
     },
     "extra": {
         "installer-paths": {
