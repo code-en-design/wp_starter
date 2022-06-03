@@ -25,6 +25,9 @@ To start a basic Wordpress website we use a few starterscripts.
 ## import_and_rename_dbase.sh
 We use this script to import the database of a life Wordpress website into our development server.
 
+## rename_and_export.sh
+We use this script to export the database of a local Wordpress website for import into our live site.
+
 see [https://wordpress.stackexchange.com/questions/290793/wp-cli-error-establishing-a-database-connection-in-localhost-mamp](https://wordpress.stackexchange.com/questions/290793/wp-cli-error-establishing-a-database-connection-in-localhost-mamp)
 
 about: Make sure to use the MAMP PHP binary.
